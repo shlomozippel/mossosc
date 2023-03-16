@@ -33,7 +33,7 @@ public:
         }
 
         if (imu.accelerationAvailable() && imu.gyroscopeAvailable() ) {
-            imu.readAcceleration(az, ay, az);
+            imu.readAcceleration(ax, ay, az);
             imu.readGyroscope(gx, gy, gz);
             ahrs.updateIMU(gx, gy, gz, ax, ay, az);
         }
